@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>TAD4</title>
+    <meta name="viewport" content="
+        width=device-width,
+        height=device-height,
+        initial-scale=1,
+        minimum-scale=1,
+        maximum-scale=1,
+        user-scalable=0"/>
+    <!--target-densitydpi=device-dpi-->
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+
+    <link rel="stylesheet" href="css/style.css"/>
+
+    <script src="js/vendor/jquery.js"></script>
+
+    <script type="text/javascript">window.$ = window.jQuery = require('./js/vendor/jquery.js');</script>
+
+    <script src="js/vendor/angular.js"></script>
+
+    <script src="js/vendor/angular-ui-router.min.js"></script>
+
+    <script src="js/vendor/angular-touch.min.js"></script>
+
+    <script src="js/vendor/angular-local-storage.min.js"></script>
+
+    <script src="js/vendor/ngDialog.min.js"></script>
+
+    <script src="js/vendor/underscore.min.js"></script>
+
+    <script src="js/vendor/nouislider.min.js"></script>
+
+    <script src="js/vendor/interact.min.js"></script>
+
+    <script src="js/vendor/slick.min.js"></script>
+
+    <script src="js/vendor/holder.min.js"></script>
+
+    <script src="js/vendor/angular-holder.js"></script>
+
+    <script src="js/vendor/google-api.js"></script>
+
+    <script src="js/vendor/google-chart.js"></script>
+
+    <!--<script src="js/vendor/ng-cordova-mocks.min.js"></script>-->
+    <script src="js/vendor/ng-cordova.min.js"></script>
+
+
+    <!-- vendor:js -->
+    <!-- endinject -->
+
+    <script src="js/app.js"></script>
+
+    <!-- app:js -->
+
+    <script src="js/app/ajaxError.js"></script>
+
+    <script src="js/app/appCtrl.js"></script>
+
+    <script src="js/app/appDrct.js"></script>
+
+    <script src="js/app/config.js"></script>
+
+    <script src="js/app/file.js"></script>
+
+    <script src="js/app/filters.js"></script>
+
+    <script src="js/app/finProtectionCtrl.js"></script>
+
+    <script src="js/app/financialPlannings.js"></script>
+
+    <script src="js/app/presentationDate.js"></script>
+
+    <script src="js/app/route.js"></script>
+
+    <script src="js/app/run.js"></script>
+
+    <script src="js/app/saveDataToServer.js"></script>
+
+    <script src="js/app/sessionService.js"></script>
+
+    <!-- endinject -->
+
+
+    <!-- pages:js -->
+
+    <script src="js/pages/calculateCtrl.js"></script>
+
+    <script src="js/pages/mainCtrl.js"></script>
+
+    <script src="js/pages/auth/authCtrl.js"></script>
+
+    <script src="js/pages/auth/authDrct.js"></script>
+
+    <script src="js/pages/auth/form.js"></script>
+
+    <script src="js/pages/auth/inviteCtrl.js"></script>
+
+    <script src="js/pages/cabinet/cabinetDrct.js"></script>
+
+    <script src="js/pages/cabinet/cabinetHeaderCtrl.js"></script>
+
+    <script src="js/pages/cabinet/cabinetLeadCtrl.js"></script>
+
+    <script src="js/pages/cabinet/cabinetLeadListCtrl.js"></script>
+
+    <script src="js/pages/cabinet/cabinetProfileCtrl.js"></script>
+
+    <script src="js/pages/cabinet/cabinetStructureCtrl.js"></script>
+
+    <script src="js/pages/cabinet/cabinetViewCtrl.js"></script>
+
+    <script src="js/pages/404/p404.js"></script>
+
+    <script src="js/pages/presentation/allTemplateDrct.js"></script>
+
+    <script src="js/pages/presentation/bankCtrl.js"></script>
+
+    <script src="js/pages/presentation/bankDrct.js"></script>
+
+    <script src="js/pages/presentation/businessCardCtrl.js"></script>
+
+    <script src="js/pages/presentation/certificateCtrl.js"></script>
+
+    <script src="js/pages/presentation/companyDrct.js"></script>
+
+    <script src="js/pages/presentation/costsCtrl.js"></script>
+
+    <script src="js/pages/presentation/incomeCtrl.js"></script>
+
+    <script src="js/pages/presentation/moneyCtrl.js"></script>
+
+    <script src="js/pages/presentation/pensionsCtrl.js"></script>
+
+    <script src="js/pages/presentation/slideControlDrct.js"></script>
+
+    <script src="js/pages/presentation/slideTitleDrct.js"></script>
+
+    <script src="js/pages/presentation/slidesCtrl.js"></script>
+
+    <script src="js/pages/presentation/storyCtrl.js"></script>
+
+    <script src="js/pages/presentation/storyDrct.js"></script>
+
+    <script src="js/pages/presentation/titleCtrl.js"></script>
+
+    <script src="js/pages/presentation/abyss/abyssCtrl.js"></script>
+
+    <script src="js/pages/presentation/abyss/abyssDrct.js"></script>
+
+    <script src="js/pages/presentation/components/componentsDrct.js"></script>
+
+    <script src="js/pages/presentation/components/graphDrct.js"></script>
+
+    <script src="js/pages/presentation/components/hSliderDrct.js"></script>
+
+    <script src="js/pages/presentation/components/ratingDrct.js"></script>
+
+    <script src="js/pages/presentation/components/scrollDrct.js"></script>
+
+    <script src="js/pages/presentation/components/telDrct.js"></script>
+
+    <script src="js/pages/presentation/components/vSliderDrct.js"></script>
+
+    <script src="js/pages/presentation/dictionary/dictionaryCtrl.js"></script>
+
+    <script src="js/pages/presentation/dictionary/slickSliderDrct.js"></script>
+
+    <script src="js/pages/presentation/family/chooseFamilyDrct.js"></script>
+
+    <script src="js/pages/presentation/family/familyCtrl.js"></script>
+
+    <script src="js/pages/presentation/family/familyDrct.js"></script>
+
+    <script src="js/pages/presentation/family/paramsDrct.js"></script>
+
+    <script src="js/pages/presentation/fin-plan/dragFinPlanDrct.js"></script>
+
+    <script src="js/pages/presentation/fin-plan/finPlanCtrl.js"></script>
+
+    <script src="js/pages/presentation/goal/dragDrct.js"></script>
+
+    <script src="js/pages/presentation/goal/goalCtrl.js"></script>
+
+    <script src="js/pages/presentation/goal/goalOtionsCtrl.js"></script>
+
+    <script src="js/pages/presentation/goal/goalPageDrct.js"></script>
+
+    <script src="js/pages/presentation/info/infoCtrl.js"></script>
+
+    <script src="js/pages/presentation/info/infoDrct.js"></script>
+
+    <script src="js/pages/presentation/minimum/minimumCtrl.js"></script>
+
+    <script src="js/pages/presentation/minimum/minimumDrct.js"></script>
+
+    <script src="js/pages/presentation/money/dragMoneyDrct.js"></script>
+
+    <script src="js/pages/presentation/teaser/teaserCtrl.js"></script>
+
+    <script src="js/pages/presentation/teaser/teaserDrct.js"></script>
+
+    <!-- endinject -->
+
+    <!-- model:js -->
+
+    <script src="js/model/calculationSrvc.js"></script>
+
+    <!-- endinject -->
+</head>
+
+
+<body ng-app="tadApp" online ng-controller="appCtrl">
+
+    <ui-view></ui-view>
+
+</body>
+</html>
